@@ -1,0 +1,167 @@
+
+body{
+
+    background-color: white;
+    overflow: hidden;
+}
+
+.tables{
+
+    float: left;
+    width: 25%;
+    text-align: center;
+    overflow-y: scroll;
+    height: 100vh;
+  
+}
+.menu{
+    
+    text-align: center;
+    float: right;
+    width: 75%;
+    overflow-y: scroll;
+    padding-left: 2px;
+    padding: 0%;
+    height: 100vh;
+    /* background-color:rgb(184, 153, 153); */
+    padding-left: 20px;
+}
+
+
+.table:hover{
+    background-color: rgb(85, 75, 145);
+}
+
+.table:active{
+background-color: green;
+}
+
+.table:visited{
+background-color:blue;
+}
+.tables h2{
+    text-align: center;
+}
+
+.table{
+    /* width: 98%; */
+    box-shadow: 2px 2px black;
+    text-align: center;
+    padding-left: 20px;
+}
+
+
+
+.search-table{
+    width: 90%;
+    box-shadow: 2px 2px black;
+    height: 60px;
+}
+
+.search-foodItem{
+    width: 90%;
+    box-shadow: 2px 2px black;
+    height: 60px;
+}
+
+.price-itemCount{
+    display: flex;
+    flex-direction: row;
+}
+
+.foodItem{
+    text-align: start;
+    box-shadow: 2px 2px black;
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+}
+
+.foodItem:hover{
+    background-color: rgb(85, 85, 128)
+}
+
+.categoryName{
+    width: fit-content;
+    border: solid rgb(248, 248, 248);
+    border-style: double;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s, transform 0.25s;
+    padding: 0;
+}
+
+.modal-content{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: (-50%,-50%);
+    background-color: white;
+    padding: 0px;
+    width: fit-content;
+    max-width: 70%;
+}
+
+
+
+section{
+    margin: 10px 20px;
+}
+
+.close-button{
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(255,255,255);
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+footer{
+    float: right;
+    margin: 10px 20px;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    opacity: 1;
+}
+
+.fa-trash{
+    color: gray;
+}
+
+
+.gbill{
+    border: solid black 1px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.gbill:hover{
+    background-color: black;
+    color: white;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
